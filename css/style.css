@@ -1,6 +1,7 @@
 @font-face {
     font-family: "Bebas Neue";
-    src: local("BebasNeueRegular"), url("../fonts/BebasNeueRegular.woff2") format("woff2"),
+    src: local("BebasNeueRegular"),
+        url("../fonts/BebasNeueRegular.woff2") format("woff2"),
         url("../fonts/BebasNeueRegular.woff") format("woff");
     font-weight: normal;
     font-style: normal;
@@ -12,14 +13,14 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 .header {
     background-color: #635854;
     padding-top: 12px;
     padding-bottom: 12px;
-    border-bottom: 4px solid #3596F5;
+    border-bottom: 4px solid #3596f5;
 }
 
 .header__container {
@@ -42,27 +43,21 @@ body {
 .header__nav-item {
     margin-left: 40px;
     margin-right: 40px;
-    transition: background-color 0.2s linear;
-}
-
-.header__nav-item:hover {
-    background-color: #3596F5;
 }
 
 .header__nav-link {
     text-decoration: none;
     color: #fff;
     font-size: 16px;
+    transition: color 0.2s linear;
+}
+
+.header__nav-link:hover {
+    color: #117ce7; 
 }
 
 .header__contacts {
     text-align: right;
-    transition: background-color 0.2s linear;
-}
-
-.header__contacts:hover {
-    text-align: right;
-    background-color: #3596F5;
 }
 
 .header__contacts-text {
@@ -79,6 +74,11 @@ body {
     font-weight: 700;
     font-size: 17px;
     line-height: 20px;
+    transition: color 0.2s linear;
+}
+
+.header__contacts-phone:hover {
+    color: #117ce7;
 }
 
 /* Main */
@@ -98,6 +98,10 @@ body {
 }
 
 .main__home path:hover {
+    opacity: 1;
+}
+
+path.current-floor {
     opacity: 1;
 }
 
@@ -148,11 +152,101 @@ body {
 }
 
 .button-primary {
-    background-color: #3596F5;
+    background-color: #3596f5;
     border-radius: 6px;
     color: #fff;
     border: none;
     display: inline-block;
     padding: 16px 36px;
     cursor: pointer;
+    transition: background-color 0.2s linear;
+}
+
+.button-primary:hover {
+    background-color: #635854;
+}
+
+/* Footer */
+.footer {
+    background-color: #d7d7d7;
+    border-top: 4px solid #3596f5;
+}
+
+.footer__container {
+    max-width: 1320px;
+    padding: 0 20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+    padding-bottom: 23px;
+}
+
+.footer__left {
+    display: flex;
+    align-items: center;
+}
+
+.footer__logo {
+    margin-right: 38px;
+}
+
+.footer__contacts {
+    margin-right: 60px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #635854;
+    transition: background-color 0.2s linear;
+}
+
+.footer__contacts-phone {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 20px;
+    color: #635854;
+    transition: color 0.2s linear;
+}
+
+.footer__contacts-phone:hover {
+    color: #117ce7; 
+}
+
+.footer__social {
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.footer__right {
+    display: flex;
+    align-items: center;
+    text-align: right;
+}
+
+.footer__nav-menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    text-align: center;
+}
+
+.footer__nav-item {
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: background-color 0.2s linear;
+}
+
+.footer__nav-link {
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration: none;
+    color: #635854;
+    border-bottom: 1px solid #635854;
+    transition: border-bottom 0.2s linear, color 0.2s linear;
+}
+
+.footer__nav-link:hover {
+    border-bottom: none;
+    color: #117ce7; 
 }
