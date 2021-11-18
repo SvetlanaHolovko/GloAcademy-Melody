@@ -5,5 +5,3 @@
 ### Технологии
 - HTML
 - CSS
-- JavaScript 
-- jQuery
