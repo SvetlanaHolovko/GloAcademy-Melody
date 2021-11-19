@@ -41,6 +41,18 @@ body {
   flex-wrap: wrap;
 }
 
+.logo {
+  display: inline-block;
+  width: 121px;
+  height: 33px;
+  fill: #fff;
+  transition: fill 0.3s ease;
+}
+
+.logo:hover {
+  fill: #117ce7;
+}
+
 .header__nav-menu {
   margin: 0;
   padding: 0;
@@ -162,8 +174,20 @@ path.current-floor {
   margin: 35px 0px;
 }
 
+.main__arrow {
+  display: inline-block;
+  width: 33px;
+  height: 20px;
+  fill: #3596f5;
+  transition: fill 0.3s ease;
+}
+
 .counter-down {
   transform: rotateX(180deg);
+}
+
+.main__arrow:hover {
+  fill: #635854;
 }
 
 .button-primary {
@@ -230,6 +254,18 @@ path.current-floor {
 .footer__social {
   text-decoration: none;
   margin-right: 15px;
+}
+
+.icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  fill: #635854;
+  transition: fill 0.3s ease;
+}
+
+.icon:hover {
+  fill: #117ce7;
 }
 
 .footer__right {
@@ -525,6 +561,7 @@ a.current-link {
 
   .header__logo {
     margin-right: 20px;
+    margin-bottom: 0;
   }
 
   .main__container {

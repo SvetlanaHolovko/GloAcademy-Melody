@@ -19,7 +19,9 @@
         <header class="header">
         <div class="header__container">
             <a href="./index.html" class="header__logo">
-            <img src="img/logo.svg" alt="Logo: ЖК Мелодия" />
+                <svg class="logo">
+                    <use xlink:href="img/sprite.svg#logo"></use>
+                </svg>
             </a>
             <nav class="header__nav">
             <ul class="header__nav-menu">
@@ -97,19 +99,19 @@
             <h2 class="main__title">Выберите желаемый этаж</h2>
             <div class="main__counter-group">
                 <button class="main__counter counter-up">
-                <img
+                    <svg class="main__arrow main__arrow-up">
+                        <use xlink:href="img/sprite.svg#arrow"></use>
+                    </svg>
+                <!-- <img
                     src="img/arrow.svg"
                     alt="arrow-up"
-                    class="main__arrow main__arrow-up"
-                />
+                    class="main__arrow main__arrow-up"/> -->
                 </button>
                 <span class="main__counter-number counter">07</span>
                 <button class="main__counter counter-down">
-                <img
-                    src="img/arrow.svg"
-                    alt="arrow-down"
-                    class="main__arrow main__arrow-down"
-                />
+                    <svg class="main__arrow main__arrow-up">
+                        <use xlink:href="img/sprite.svg#arrow"></use>
+                    </svg>
                 </button>
             </div>
             <div class="main__button button-primary view-flats">
@@ -132,16 +134,24 @@
             </div>
             <div class="footer__socials">
                 <a href="#" class="footer__social">
-                <img class="fb" src="img/social/facebook.svg" alt="Facebook" />
+                    <svg class="icon facebook">
+                        <use xlink:href="img/sprite.svg#facebook"></use>
+                    </svg>
                 </a>
                 <a href="#" class="footer__social">
-                <img src="img/social/instagram.svg" alt="Instagram" />
+                    <svg class="icon instagram">
+                        <use xlink:href="img/sprite.svg#instagram"></use>
+                    </svg>
                 </a>
                 <a href="#" class="footer__social">
-                <img src="img/social/twitter.svg" alt="Twitter" />
+                    <svg class="icon twitter">
+                        <use xlink:href="img/sprite.svg#twitter"></use>
+                    </svg>
                 </a>
                 <a href="#" class="footer__social">
-                <img src="img/social/youtube.svg" alt="youtube" />
+                    <svg class="icon youtube">
+                        <use xlink:href="img/sprite.svg#youtube"></use>
+                    </svg>
                 </a>
             </div>
             </div>
